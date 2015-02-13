@@ -18,17 +18,16 @@ TARGET_SCREEN_WIDTH := 720
 
 # Kernel properties
 BUILD_KERNEL_WITH_ROM := true
-TARGET_KERNEL_SOURCE := kernel/sony
-TARGET_KERNEL_CONFIG := aosp_yukon_tianchi_defconfig
+TARGET_KERNEL_CONFIG := cm_yukon_tianchi_dsds_defconfig
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := D5303,tianchi
+TARGET_OTA_ASSERT_DEVICE := D5322,tianchi
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/sony/tianchi/rootdir/fstab.yukon
+TARGET_RECOVERY_FSTAB := device/sony/tianchi_dsds/rootdir/fstab.yukon
 
 # Inherit from tianchi device
-$(call inherit-product, device/sony/tianchi/aosp_d5303.mk)
+$(call inherit-product, device/sony/tianchi_dsds/tianchi_dsds.mk)
 
 # Inherit from common resources
 $(call inherit-product, device/sony/common/resources.mk)
@@ -37,9 +36,9 @@ $(call inherit-product, device/sony/common/resources.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=D5303 \
-    BUILD_FINGERPRINT=Sony/D5303/D5303:4.4.3/19.1.1.A.0.165/Wv93Zw:user/release-keys \
-    PRIVATE_BUILD_DESC="D5303-user 4.4.3 19.1.1.A.0.165 Wv93Zw release-keys"
+    PRODUCT_NAME=D5322 \
+    BUILD_FINGERPRINT=Sony/D5322/D5303:4.4.3/19.1.1.C.0.56/x393Zw:user/release-keys \
+    PRIVATE_BUILD_DESC="D5322-user 4.4.3 19.1.1.C.0.56 x393Zw release-keys"
 
-PRODUCT_NAME := cm_tianchi
-PRODUCT_DEVICE := tianchi
+PRODUCT_NAME := cm_tianchi_dsds
+PRODUCT_DEVICE := tianchi_dsds

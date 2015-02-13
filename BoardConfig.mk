@@ -14,7 +14,7 @@
 
 include device/sony/msm8226-common/BoardConfig.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := D5303
+TARGET_BOOTLOADER_BOARD_NAME := D5322
 
 BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 2399141888
 # Reserve space for data encryption (5112839168-16384)
