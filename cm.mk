@@ -21,7 +21,7 @@ BUILD_KERNEL_WITH_ROM := true
 TARGET_KERNEL_CONFIG := cm_yukon_tianchi_dsds_defconfig
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := D5322,tianchi
+TARGET_OTA_ASSERT_DEVICE := D5322,tianchi_dsds
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/sony/tianchi_dsds/rootdir/fstab.yukon
