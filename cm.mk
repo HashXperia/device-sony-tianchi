@@ -18,7 +18,7 @@ TARGET_SCREEN_WIDTH := 720
 
 # Kernel properties
 BUILD_KERNEL_WITH_ROM := true
-TARGET_KERNEL_CONFIG := cm_yukon_tianchi_dsds_defconfig
+TARGET_KERNEL_CONFIG := cm_yukon_tianchi_defconfig
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D5322,tianchi_dsds
