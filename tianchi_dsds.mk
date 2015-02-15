@@ -51,7 +51,3 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 #DPI
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
-
-#DSDS
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.radio.multisim.config=dsds
