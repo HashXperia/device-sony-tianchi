@@ -13,7 +13,6 @@
 # limitations under the License.
 
 TARGET_KERNEL_CONFIG := aosp_yukon_tianchi_defconfig
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 
 # backlight brightness below 127 is useless
 # use 127-255 as brightness range.
@@ -22,7 +21,7 @@ BOARD_HAS_DIM_BACKLIGHT := true
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 $(call inherit-product, device/sony/yukon/device.mk)
-$(call inherit-product, vendor/sony/tianchi/tianchi-vendor.mk)
+$(call inherit-product, vendor/sony/tianchi_dsds/tianchi_dsds-vendor.mk)
 $(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 PRODUCT_COPY_FILES += \
@@ -40,10 +39,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     keystore.msm8226
 
-PRODUCT_NAME := aosp_d5303
+PRODUCT_NAME := aosp_d5322
 PRODUCT_DEVICE := tianchi
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := Xperia T2 Ultra (AOSP)
+PRODUCT_MODEL := Xperia T2 Ultra Dual (AOSP)
 PRODUCT_LOCALES += xhdpi hdpi
 PRODUCT_MANUFACTURER := Sony
 
