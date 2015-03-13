@@ -16,6 +16,9 @@ include device/sony/yukon/BoardConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := D5322
 
+TARGET_RECOVERY_FSTAB = device/sony/tianchi_dsds/rootdir/fstab.yukon
+TARGET_NO_SEPARATE_RECOVERY := true
+
 BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 2399141888
 #Reserve space for data encryption (5112839168-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 5112822784
